@@ -200,7 +200,7 @@ part1: `divide{@m_1_th3_`
 ## Step 6: Retrieve the Second Part
 Use the `strings` command or similar method on `flag.png` to retrieve the second part of the flag:
 
-![.](Forensics/Open-Your-Eyes/fla2.png)
+![.](Forensics/Open-Your-Eyes/flag2.png)
 
 Part2: `0nlY_@Ne_W4it1ng?}`
 
