@@ -119,6 +119,7 @@ The image contains the following binary strings:
 ## Step 2: Decode Binary
 Using CyberChef, decode the binary string: `1sh0wspeEd`
 
+---
 
 ### Step 3: Extract Hidden File
 Use `steghide` to extract the hidden file from the image using the password `1sh0wspeEd`:
