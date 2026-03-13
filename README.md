@@ -15,6 +15,10 @@
 ## Forensics
 
 ### Can't Let Go
+![.](Forensics/FindAndOpen/wireshark.png)
+
+#### 🚩 Flag: picoCTF{R34DING_LOKd_fil56_succ3ss_cbf2ebf6}
+
 ### Kelajuan aKa Speed
 ### Open Your Eyes
 ### Something Left Behind
