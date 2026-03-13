@@ -299,8 +299,6 @@ This challenge tested skills in:
 ## Challenge Overview
 We are given a `.wav` audio file. The goal is to decode the hidden message, which is transmitted as an SSTV (Slow-Scan Television) signal.  
 
-![.](Forensics/Alien-Is-Our-Friend/question.png)
-
 ---
 
 ## Step 1: Analyze the Audio
