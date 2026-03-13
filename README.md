@@ -109,6 +109,17 @@ We are given an image containing binary strings hidden across it. The goal is to
 
 ---
 
+## Step 1: Extract Binary Strings
+The image contains the following binary strings:
+
+`00110001 01110011 01101000 00110000 01110111 01110011 01110000 01100101 01000101 01100100`
+
+---
+
+## Step 2: Decode Binary
+Using CyberChef, decode the binary string: `1sh0wspeEd`
+
+
 ### Step 3: Extract Hidden File
 Use `steghide` to extract the hidden file from the image using the password `1sh0wspeEd`:
 
