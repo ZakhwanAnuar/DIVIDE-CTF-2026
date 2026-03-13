@@ -33,7 +33,6 @@ Attempting to open `memories.pdf` directly fails. Upon inspection, it turns out 
 
 Rename the file extension from `.pdf` to `.7z`:
 
-
 ---
 
 ### Step 3: Extract the Archive
@@ -106,7 +105,7 @@ Opening the PDF appears blank, but selecting all text (CTRL + A) reveals the sec
 ### Challenge Overview
 We are given an image containing binary strings hidden across it. The goal is to extract the hidden flag.  
 
-![.](Forensics/Kelajuan-aKa-Speed/question.png)
+![.](Forensics/Kelajuan-aKa-Speed/kelajuan.jpg)
 
 ---
 
