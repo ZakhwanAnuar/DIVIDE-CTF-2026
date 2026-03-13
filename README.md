@@ -13,7 +13,7 @@
   - [Echoes in the Disguise](#EchoesIntheDisguise)
   - [Malware or not?](#MalwareOrNot?)
 ## Forensics
-### CantLetGo
+### Can't Let Go
 The challenge description states that the ZIP password can be found inside the **`PCAP file`**.
 
 First and foremost, I opened the provided PCAP file using Wireshark.
