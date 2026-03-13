@@ -3,7 +3,7 @@
 ## 📑 Table of Contents
 
 - [Forensics](#forensics)
-  - [Can't Let Go](#CantLetGo)
+  - [Can't Let Go](#Cant-Let-Go)
   - [Kelajuan aKa Speed](#kelajuanakaspeed)
   - [Open Your Eyes](#OpenYourEyes)
   - [Something Left Behind](#SomethingLeftBehind)
