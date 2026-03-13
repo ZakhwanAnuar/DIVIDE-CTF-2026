@@ -98,6 +98,9 @@ Opening the PDF appears blank, but selecting all text (CTRL + A) reveals the sec
 
 #### 🚩 Flag: divide{HoP3_wE_c4N_Be_bACk_AS_B3Fore_i_miss_you_Say4ng}
 
+---
+---
+
 ### Kelajuan aKa Speed
 
 ![.](Forensics/Kelajuan-aKa-Speed/question.png)
@@ -134,6 +137,8 @@ i cat `secret.txt` file and get the flag.
 
 #### 🚩 Flag: divide{Ish0wsPe3d_1s_tHe_9re4tEst_str3@meR}
 
+---
+---
 
 ### Open Your Eyes
 ### Challenge Overview
@@ -198,6 +203,9 @@ Use the `strings` command or similar method on `flag.png` to retrieve the second
 Part2: `0nlY_@Ne_W4it1ng?}`
 
 #### 🚩 Flag: divide{@m_1_th3_0nlY_@Ne_W4it1ng?}
+
+---
+---
 
 ### Something Left Behind
 ![.](Forensics/Something-Left-Behind/question.png)
