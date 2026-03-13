@@ -14,7 +14,7 @@
   - [Malware or not?](#malware-or-not)
 ## Forensics
 
-### Can't Let Go
+## Can't Let Go
 ![.](Forensics/Cant-Let-Go/question.png)
 
 We are given an `.eml` file. The goal is to find the hidden flag inside the attachments sent via email. 
@@ -101,7 +101,7 @@ Opening the PDF appears blank, but selecting all text (CTRL + A) reveals the sec
 ---
 ---
 
-### Kelajuan aKa Speed
+## Kelajuan aKa Speed
 
 ![.](Forensics/Kelajuan-aKa-Speed/question.png)
 
@@ -140,7 +140,7 @@ i cat `secret.txt` file and get the flag.
 ---
 ---
 
-### Open Your Eyes
+## Open Your Eyes
 ### Challenge Overview
 We are given two files: `file.pdf` and `Flag.7z`.  
 The goal is to find the password hidden in the PDF to extract the 7z archive and retrieve the flag.  
@@ -200,6 +200,8 @@ part1: `divide{@m_1_th3_`
 ## Step 6: Retrieve the Second Part
 Use the `strings` command or similar method on `flag.png` to retrieve the second part of the flag:
 
+![.](Forensics/Open-Your-Eyes/fla2.png)
+
 Part2: `0nlY_@Ne_W4it1ng?}`
 
 #### 🚩 Flag: divide{@m_1_th3_0nlY_@Ne_W4it1ng?}
@@ -207,10 +209,10 @@ Part2: `0nlY_@Ne_W4it1ng?}`
 ---
 ---
 
-### Something Left Behind
+## Something Left Behind
 ![.](Forensics/Something-Left-Behind/question.png)
-### Alien Is Our Friend
-### AlphaZer0
-### Unusual Incident
-### Echoes in the Disguise
-### Malware or not?
+## Alien Is Our Friend
+## AlphaZer0
+## Unusual Incident
+## Echoes in the Disguise
+## Malware or not?
