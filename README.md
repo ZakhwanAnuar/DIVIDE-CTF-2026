@@ -254,6 +254,8 @@ Password: *po904$2!*
 ## Step 3: Check Chrome Browser History
 Investigate Chrome history to find any relevant URLs:
 
+![.](Forensics/Something-Left-Behind/history.png)
+
 Suspicious URL: `https://alphazer0.divide.cloud/ops0-1.zip`
 
 ---
