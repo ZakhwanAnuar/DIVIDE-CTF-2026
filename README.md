@@ -15,8 +15,8 @@
 ## Forensics
 
 ### Can't Let Go
-![.](Forensics/FindAndOpen/wireshark.png)
-
+![.](Forensics/Can't-Let-Go/question.png)
+Forensics/Can't Let Go
 #### 🚩 Flag: picoCTF{R34DING_LOKd_fil56_succ3ss_cbf2ebf6}
 
 ### Kelajuan aKa Speed
