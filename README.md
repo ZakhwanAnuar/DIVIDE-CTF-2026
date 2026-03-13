@@ -3,17 +3,26 @@
 ## 📑 Table of Contents
 
 - [Forensics](#forensics)
-  - [Can't Let Go](#Cant-Let-Go)
-  - [Kelajuan aKa Speed](#kelajuanakaspeed)
-  - [Open Your Eyes](#OpenYourEyes)
-  - [Something Left Behind](#SomethingLeftBehind)
-  - [Alien Is Our Friend](#AlienIsOurFriend)
-  - [AlphaZer0](#AlphaZer0)
-  - [Unusual Incident](#UnusualIncident)
-  - [Echoes in the Disguise](#EchoesIntheDisguise)
-  - [Malware or not?](#MalwareOrNot?)
+  - [Can't Let Go](#cant-let-go)
+  - [Kelajuan aKa Speed](#kelajuan-aka-speed)
+  - [Open Your Eyes](#open-your-eyes)
+  - [Something Left Behind](#something-left-behind)
+  - [Alien Is Our Friend](#alien-is-our-friend)
+  - [AlphaZer0](#alphazer0)
+  - [Unusual Incident](#unusual-incident)
+  - [Echoes in the Disguise](#echoes-in-the-disguise)
+  - [Malware or not?](#malware-or-not)
 ## Forensics
+
 ### Can't Let Go
+### Kelajuan aKa Speed
+### Open Your Eyes
+### Something Left Behind
+### Alien Is Our Friend
+### AlphaZer0
+### Unusual Incident
+### Echoes in the Disguise
+### Malware or not?
 The challenge description states that the ZIP password can be found inside the **`PCAP file`**.
 
 First and foremost, I opened the provided PCAP file using Wireshark.
