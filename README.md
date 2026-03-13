@@ -93,6 +93,8 @@ Use the password `theMoonisBeuty` to extract `loveYou.7z`. Inside, there is a PD
 
 Opening the PDF appears blank, but selecting all text (CTRL + A) reveals the second part of the flag at the bottom:
 
+![.](Forensics/Cant-Let-Go/part2.png)
+
 *part2: _AS_B3Fore_i_miss_you_Say4ng}*
 
 #### 🚩 Flag: divide{HoP3_wE_c4N_Be_bACk_AS_B3Fore_i_miss_you_Say4ng}
