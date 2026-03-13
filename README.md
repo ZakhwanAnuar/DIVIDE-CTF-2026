@@ -24,7 +24,6 @@ Open the `.eml` file using Outlook. The email contains an attachment named `memo
 
 ![.](Forensics/Cant-Let-Go/email.png)
 
----
 
 ## Step 2: Verify the Attachment
 Attempting to open `memories.pdf` directly fails. Upon inspection, it turns out that the file is not a true PDF but actually a 7z archive.  
@@ -33,7 +32,6 @@ Attempting to open `memories.pdf` directly fails. Upon inspection, it turns out 
 
 Rename the file extension from `.pdf` to `.7z`:
 
----
 
 ## Step 3: Extract the Archive
 Extract `memories.7z`. After extraction, we get a folder named `flag` containing:
@@ -45,7 +43,6 @@ Extract `memories.7z`. After extraction, we get a folder named `flag` containing
 
 ![.](Forensics/Cant-Let-Go/list.png)
 
----
 
 ## Step 4: Identify Correct File Extensions
 Some files have incorrect extensions. After fixing them:
@@ -55,7 +52,6 @@ Some files have incorrect extensions. After fixing them:
 3. `letter.png`
 4. `pantai.png`
 
----
 
 ## Step 5: Examine Files
 
@@ -66,7 +62,6 @@ Opening `ourPic.png` reveals the first part of the flag:
 
 *part1: divide{HoP3_wE_c4N_Be_bACk*
 
----
 
 ## letter.png
 `letter.png` contains a password: *theMoonisBeuty*
@@ -76,14 +71,12 @@ This password will be used for `loveYou.7z`.
 
 ![.](Forensics/Cant-Let-Go/letter.png)
 
----
 
 ## pantai.png
 No flag here, just an image for context.
 
 ![.](Forensics/Cant-Let-Go/pantai.png)
 
----
 
 ## Step 6: Extract loveYou.7z
 Use the password `theMoonisBeuty` to extract `loveYou.7z`. Inside, there is a PDF file.
@@ -110,19 +103,16 @@ We are given an image containing binary strings hidden across it. The goal is to
 
 ![.](Forensics/Kelajuan-aKa-Speed/kelajuan.jpg)
 
----
 
 ## Step 1: Extract Binary Strings
 The image contains the following binary strings:
 
 `00110001 01110011 01101000 00110000 01110111 01110011 01110000 01100101 01000101 01100100`
 
----
 
 ## Step 2: Decode Binary
 Using CyberChef, decode the binary string: `1sh0wspeEd`
 
----
 
 ## Step 3: Extract Hidden File
 Use `steghide` to extract the hidden file from the image using the password `1sh0wspeEd`:
@@ -148,7 +138,6 @@ The goal is to find the password hidden in the PDF to extract the 7z archive and
 
 ![.](Forensics/Open-Your-Eyes/question.png)
 
----
 
 ## Step 1: Inspect the PDF
 Opening `file.pdf` shows a picture of Plankton and some clues, including text like "Tuut Tut".  
@@ -157,7 +146,6 @@ Opening `file.pdf` shows a picture of Plankton and some clues, including text li
 
 Decoding the text directly yields nothing.  
 
----
 
 ## Step 2: Check for Embedded Files
 Use `binwalk` to check for any hidden or appended files:
@@ -166,14 +154,12 @@ Use `binwalk` to check for any hidden or appended files:
 
 There is a `.wav` file appended at the end of the PDF.
 
----
 
 ## Step 3: Extract the Audio
 Extract the embedded WAV file manually:
 
 ![.](Forensics/Open-Your-Eyes/extract.png)
 
----
 
 ## Step 4: Analyze the Audio
 Listening to the WAV file suggests it contains a hidden message using sound patterns.  
@@ -185,7 +171,6 @@ Readable strings appear in the spectrogram. These strings reveal the password fo
 
 password: `D1VIDE/WB`
 
----
 
 ## Step 5: Extract the 7z Archive
 Use the password to extract `Flag.7z`. The extraction produces `flag.png`.  
@@ -196,7 +181,6 @@ The first part of the flag is:
 
 part1: `divide{@m_1_th3_`
 
----
 
 ## Step 6: Retrieve the Second Part
 Use the `strings` command or similar method on `flag.png` to retrieve the second part of the flag:
@@ -218,7 +202,6 @@ The goal is to investigate the artifact and retrieve the hidden flag.
 
 ![.](Forensics/Something-Left-Behind/question.png)
 
----
 
 ## Step 1: Inspect the Artifact
 The extracted artifact contains multiple files and directories from the device.  
@@ -229,7 +212,6 @@ Among these, we focus on application data:
 
 file path: `Artifact1\Samsung_S21\data\app`
 
----
 
 ## Step 2: Analyze WhatsApp Database
 In the WhatsApp app folder, locate the database `msgstore`:
@@ -249,7 +231,6 @@ From the conversation, we construct the portal credentials:
 Username: *AkaN4M1*
 Password: *po904$2!*
 
----
 
 ## Step 3: Check Chrome Browser History
 Investigate Chrome history to find any relevant URLs:
@@ -258,7 +239,6 @@ Investigate Chrome history to find any relevant URLs:
 
 Suspicious URL: `https://alphazer0.divide.cloud/ops0-1.zip`
 
----
 
 ## Step 4: Access the Portal
 Visit the portal and login using the extracted credentials:
@@ -274,7 +254,6 @@ After login, the dashboard shows uploaded files.
 
 Download the file `ops0-1.zip` to retrieve the flag.
 
----
 
 ## Step 5: Retrieve the Flag
 Extracting the file gives the flag:
@@ -282,7 +261,6 @@ Extracting the file gives the flag:
 
 #### 🚩 Flag: divide{Alphazer0_W3_cAmE_WE_s@W_we_Sh4RE!}
 
----
 
 ## Conclusion
 This challenge tested skills in:
@@ -301,13 +279,10 @@ This challenge tested skills in:
 ## Challenge Overview
 We are given a `.wav` audio file. The goal is to decode the hidden message, which is transmitted as an SSTV (Slow-Scan Television) signal.  
 
----
-
 ## Step 1: Analyze the Audio
 Listening to the `.wav` file suggests that it contains SSTV signals rather than normal audio.  
 SSTV signals are used to transmit images via sound.
 
----
 
 ## Step 2: Decode the SSTV Signal
 To decode the SSTV audio, we can use an online SSTV decoder:  
@@ -316,7 +291,6 @@ url: *https://sstv-decoder.mathieurenaud.fr/*
 
 Upload the `.wav` file and let the decoder process the signal.  
 
----
 
 ## Step 3: Retrieve the Image
 After decoding, the SSTV signal reveals an image.  
@@ -327,15 +301,121 @@ The flag is visible inside the decoded image.
 
 ![.](Forensics/Alien-Is-Our-Friend/flag.png)
 
----
 
 ## Step 4: Extract the Flag
 The extracted flag is:
 
 #### 🚩 Flag: divide{Now_you_know_about_SSTV}
 
+---
+---
 
 # AlphaZer0
+
+![.](Forensics/Alphazer0/question.png)
+
+given a redacted string in image. the mission is to unredacted the image.
+
+![.](Forensics/Alphazer0/secret.png)
+
+i do some research and find this tool at github to unredact image.
+
+![.](Forensics/Alphazer0/github.png)
+
+URL: *https://github.com/BishopFox/unredacter*
+
+i use the tool and get the key:
+
+![.](Forensics/Alphazer0/flag.png)
+
+#### 🚩 Flag: divide{unitenthunders}
+
 # Unusual Incident
-# Echoes in the Disguise
+
+![.](Forensics/Unusual-Incident/question.png)
+
+we are given `vmdk` file.
+
+i try to open the file in **Autopsy** and try to navigate to find any suspicous thing.
+
+navigate to `vol_vol6/Users/User/Documents`
+
+![.](Forensics/Unusual-Incident/flag1.png)
+
+and i see suspicous string in `letgo.txt` file.
+
+1. key= iloveuniten
+2. ltjdhy{L0ck_Jbz3ygdGm
+3. ...- .. --. . -. . .-. . -.-. .. .--. .... . .-.
+
+i try to decode it at cybercef
+
+The morce code: 
+
+![.](Forensics/Unusual-Incident/morse.png)
+
+decode: *VIGENERECIPHER*
+
+i think its clue that the cipher text is vigenere cipher. so i try to decode that string using that key.
+
+![.](Forensics/Unusual-Incident/decode.png)
+
+i decode it and get a string of a partial flag.
+
+Part 1: **divide{Y0ur_For3nsiCs**
+
+after that i try to navigate to `vol_vol6/Users/User/Pictures/Saved Pictures`
+
+![.](Forensics/Unusual-Incident/flag2.png)
+
+got the part2 of the flag.
+
+Part 2: **_Sk!lLs_1s_7Op_N0tcH!}**
+
+#### 🚩 Flag: divide{Y0ur_For3nsiCs_Sk!lLs_1s_7Op_N0tcH!}
+
+---
+---
+
 # Malware or not?
+
+## Challenge Overview
+We are given a `.doc` file suspected of being a malware sample.  
+The goal is to analyze the document and find any indicators of compromise (IoC).  
+
+![.](Forensics/Malware-Or-Not/question.png)
+
+
+## Step 1: Check for Macros
+Use `olevba` to inspect the `.doc` file for any embedded macros:
+
+![.](Forensics/Malware-Or-Not/olevba.png)
+
+No macros are detected.
+
+
+## Step 2: Extract Document Contents
+A `.doc` file contains multiple XML files. Extract them to analyze further:
+
+![.](Forensics/Malware-Or-Not/extract.png)
+
+## Step 3: Check for External Links (Follina CVE-2022-30190)
+Inspect the relationships folder for external links:
+
+`/word/_rels/document.xml.rels`
+
+Cat the `document.xml.rels` file and look for suspicious URLs:
+
+![.](Forensics/Malware-Or-Not/flag.png)
+
+We find an external link, which is a known IoC:
+
+URL: `https://happy.divide.cloud/nowyouknow.html`
+
+
+#### 🚩 Flag: divide{https://happy.divide.cloud/nowyouknow.html}
+
+# Echoes in the Disguise
+
+
+
